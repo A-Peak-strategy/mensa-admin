@@ -1,0 +1,121 @@
+/**
+ * Global styles for admin dashboard tables.
+ * Import this file in your layout or page components.
+ */
+
+/* Enhanced table row hover effects */
+.MuiTableRow-root {
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.MuiTableBody-root .MuiTableRow-root:hover {
+    background-color: rgba(99, 102, 241, 0.04) !important;
+}
+
+/* Table header styling */
+.MuiTableHead-root .MuiTableRow-root {
+    background-color: #f8f9fa;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+    font-weight: 600;
+    color: #374151;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+/* Status chip enhancements */
+.MuiChip-root {
+    font-weight: 500;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.MuiChip-root:hover {
+    transform: scale(1.05);
+}
+
+/* Card hover effects */
+.MuiCard-root {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.MuiCard-root:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Stats card animation on hover */
+.stats-card {
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Skeleton shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.MuiSkeleton-root {
+    animation: shimmer 1.5s infinite linear;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.06) 25%,
+            rgba(0, 0, 0, 0.1) 50%,
+            rgba(0, 0, 0, 0.06) 75%);
+    background-size: 200% 100%;
+}
+
+/* Action buttons in tables */
+.table-action-btn {
+    opacity: 0.7;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.MuiTableRow-root:hover .table-action-btn {
+    opacity: 1;
+}
+
+.table-action-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Data grid improvements */
+.MuiDataGrid-row:hover {
+    background-color: rgba(99, 102, 241, 0.04) !important;
+}
+
+.MuiDataGrid-cell:focus {
+    outline: none !important;
+}
+
+/* Button ripple effect */
+.MuiButton-root {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Smooth scrollbar for tables */
+.MuiTableContainer-root::-webkit-scrollbar {
+    height: 8px;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
